@@ -291,9 +291,27 @@
     .footer-text p {
         color: var(--text-muted);
     }
-    .footer-area .social-icon a {
+    .footer-area .social-icon {
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+     .footer-area .social-icon li {
+        list-style: none;
+     }
+     .footer-area .social-icon a {
         background: var(--card-background);
         color: #fff;
+        border: 1px solid var(--card-border);
+        transition: all 0.3s ease;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
      }
      .footer-area .social-icon a:hover {
         background: var(--primary-color);
@@ -343,6 +361,7 @@
               <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
                 <li><a class="github" href="https://github.com/raj577" target="_blank"><i class="icon-social-github"></i></a></li>
                 <li><a class="linkedin" href="https://www.linkedin.com/in/rajat-srivastav-393725325/" target="_blank"><i class="icon-social-linkedin"></i></a></li>
+                <li><a class="substack" href="https://brewingcode.substack.com/" target="_blank"><i class="fa fa-newspaper-o"></i></a></li>
               </ul>
               <div class="header-button wow fadeInUp" data-wow-delay="1s">
                 <a href="#portfolio" class="btn btn-common">View My Work</a>
@@ -374,7 +393,7 @@
             </div>
             <div class="text-center mt-4">
                 <a href="#contact" class="btn btn-danger"><i class="icon-speech"></i> Contact Me</a>
-                <a href="https://drive.google.com/file/d/1B1-L93MElwt5uqaV_cAUMx4s_r-_UEb9/view?usp=sharing" target="_blank" class="btn btn-common ml-2"><i class="icon-cloud-download"></i> Download Resume</a>
+                <!-- <a href="https://drive.google.com/file/d/1B1-L93MElwt5uqaV_cAUMx4s_r-_UEb9/view?usp=sharing" target="_blank" class="btn btn-common ml-2"><i class="icon-cloud-download"></i> Download Resume</a> -->
             </div>
           </div>
         </div>
@@ -504,6 +523,7 @@
             <ul class="social-icon">
               <li><a class="github" href="https://github.com/raj577" target="_blank"><i class="icon-social-github"></i></a></li>
               <li><a class="linkedin" href="https://www.linkedin.com/in/rajat-srivastav-393725325/" target="_blank"><i class="icon-social-linkedin"></i></a></li>
+              <li><a class="substack" href="https://brewingcode.substack.com/" target="_blank"><i class="fa fa-newspaper-o"></i></a></li>
             </ul>
             <p>Copyright © 2025 Rajat Srivastav | All Rights Reserved</p>
           </div>
