@@ -1,342 +1,572 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Rajat Srivastav</title>
+  <title>Rajat Srivastav | Developer & AI Enthusiast</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
-    <!-- Fonts -->
-    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
-    <!-- Icon -->
-    <link rel="stylesheet" type="text/css" href="assets/fonts/simple-line-icons.css">
-    <!-- Slicknav -->
-    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
-    <!-- Menu CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/menu_sideslide.css">
-    <!-- Slider CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/slide-style.css">
-    <!-- Nivo Lightbox -->
-    <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css" >
-    <!-- Animate -->
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-    <!-- Main Style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <!-- Responsive Style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+  <!-- CDN CSS Files -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-  </head>
-  <body>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Header Area wrapper Starts -->
-    <header id="header-wrap">
-      <!-- Navbar Start -->
-      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              <span class="icon-menu"></span>
-              <span class="icon-menu"></span>
-              <span class="icon-menu"></span>
-            </button>
-            <!-- <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt=""></a> -->
-          </div>
-          <div class="collapse navbar-collapse" id="main-navbar">
-            <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
-              <li class="nav-item active">
-                <a class="nav-link" href="#hero-area">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">
-                  About
-                </a>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="#services">
-                  Services
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#resume">
-                  Resume
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#portfolios">
-                  Work
-                </a>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+  <!-- Custom Styles -->
+  <style>
+    :root {
+      --primary-color: #6a11cb; /* A deeper purple */
+      --accent-color: #2575fc; /* A vibrant blue */
+      --background-dark: #121212;
+      --background-light: #1e1e1e;
+      --text-color: #e0e0e0;
+      --text-muted: #b0b0b0;
+      --card-background: rgba(255, 255, 255, 0.05);
+      --card-border: rgba(255, 255, 255, 0.1);
+      --glow-color: rgba(37, 117, 252, 0.5);
+    }
 
-        <!-- Mobile Menu Start -->
-        <ul class="onepage-nev mobile-menu">
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">about</a>
-          </li>
-          <!-- <li>
-            <a href="#services">Services</a>
-          </li>
-          <li>
-            <a href="#resume">resume</a>
-          </li> -->
-          <li>
-            <a href="#portfolio">Work</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-        <!-- Mobile Menu End -->
-      </nav>
-      <!-- Navbar End -->
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(-45deg, #0a0e1a, #1a1a2e, #2a2a4e, #1a1a2e);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: var(--text-color);
+    }
 
-      <!-- Hero Area Start -->
-      <div id="hero-area" class="hero-area-bg">
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 text-center">
-              <div class="contents">
-                <h5 class="script-font wow fadeInUp" data-wow-delay="0.2s">Hi This is</h5>
-                <h2 class="head-title wow fadeInUp" data-wow-delay="0.4s"> Rajat Srivastav</h2>
-                  
-                
-                <p class="script-font wow fadeInUp" data-wow-delay="0.6s"></p>
-                <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
-                  <!-- <li>
-                    <a class="facebook" href="#"><i class="icon-social-facebook"></i></a>
-                  </li> -->
-                  <!-- <li>
-                    <a class="twitter" href="#"><i class="icon-social-twitter"></i></a>
-                  </li> -->
-                  <li>
-                    <a class="github" href="https://github.com/raj577"  target="_blank"><i class="icon-social-github"></i></a>
-                  </li>
-                  <li>
-                    <a class="linkedin" href="https://www.linkedin.com/in/rajat-srivastav-393725325/" target="_blank"><i class="icon-social-linkedin"></i></a>
-                  </li>
-                  <!-- <li>
-                    <a class="google" href="#"><i class="icon-social-google"></i></a>
-                  </li> -->
-                </ul>
-                <div class="header-button wow fadeInUp" data-wow-delay="1s">
-                  <a href="#about" class="btn btn-common">Know more about me!</a>
-                </div>
-              </div>
-            </div>
-          </div>
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    p {
+        color: var(--text-muted);
+        line-height: 1.8;
+    }
+
+    .section-padding {
+        padding: 100px 0;
+    }
+    
+    .navbar {
+        background: rgba(18, 18, 18, 0.8) !important;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 1rem 1rem;
+    }
+
+    .navbar .nav-link {
+        color: var(--text-color) !important;
+        font-weight: 400;
+        transition: color 0.3s ease, text-shadow 0.3s ease;
+        padding: 0.5rem 1rem;
+    }
+    .navbar .nav-link:hover, .navbar .nav-item.active .nav-link {
+        color: #fff !important;
+        text-shadow: 0 0 10px var(--accent-color);
+    }
+
+    #hero-area {
+      background: none;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    #hero-area .overlay {
+        background: rgba(0,0,0,0.4);
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+    }
+    #hero-area .contents .head-title {
+        font-size: 4rem;
+        color: #fff;
+        font-weight: 700;
+        text-shadow: 1px 1px 10px rgba(0,0,0,0.7);
+    }
+     #hero-area .contents .script-font {
+        color: #fff;
+        font-size: 1.8rem;
+     }
+     #hero-area .contents .typed-text {
+        color: var(--accent-color);
+        text-shadow: 0 0 8px var(--glow-color);
+     }
+     #hero-area .social-icon {
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+     }
+     #hero-area .social-icon li {
+        list-style: none;
+     }
+     #hero-area .social-icon a {
+        background: var(--card-background);
+        color: #fff;
+        border: 1px solid var(--card-border);
+        transition: all 0.3s ease;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+     }
+     #hero-area .social-icon a:hover {
+        background: var(--accent-color);
+        color: #fff;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+     }
+
+    .profile-wrapper, .contact-block, .footer-right-area, .project-card, .skill-card {
+      background: var(--card-background);
+      border: 1px solid var(--card-border);
+      border-radius: 15px;
+      padding: 30px;
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      transition: box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .profile-wrapper:hover, .contact-block:hover, .footer-right-area:hover, .project-card:hover, .skill-card:hover {
+        box-shadow: 0 0 25px var(--glow-color);
+    }
+    
+    .admin-profile li {
+        display: flex;
+        align-items: baseline;
+        padding: 12px 0;
+        border-bottom: 1px solid var(--card-border);
+    }
+    .admin-profile li:last-child {
+        border-bottom: none;
+    }
+    .admin-profile .pro-title {
+        color: var(--accent-color);
+        font-weight: 600;
+        width: 100px;
+        flex-shrink: 0;
+    }
+    .admin-profile .pro-detail {
+        color: var(--text-color);
+    }
+
+    .btn {
+        border-radius: 50px;
+        padding: 12px 30px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .btn-common {
+      background-image: linear-gradient(to right, var(--accent-color) 0%, var(--primary-color) 100%);
+      border: none;
+      color: #fff;
+    }
+    .btn-common:hover {
+      color: #fff;
+    }
+    .btn-danger {
+      background-image: linear-gradient(to right, #ff512f 0%, #dd2476 100%);
+      border: none;
+      color: #fff;
+    }
+     .btn-danger:hover {
+      color: #fff;
+    }
+    
+    .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+        color: #fff;
+        font-size: 2.8rem;
+        font-weight: 700;
+    }
+
+    #skills, #portfolio {
+        background-color: var(--background-light);
+    }
+    
+    .skill-card {
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    .skill-card i {
+        font-size: 3rem;
+        margin-bottom: 15px;
+        color: var(--accent-color);
+        transition: transform 0.3s ease;
+    }
+    .skill-card:hover i {
+        transform: scale(1.2);
+    }
+    .skill-card h5 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: var(--text-color);
+    }
+
+    .project-card {
+        margin-bottom: 30px;
+        text-align: left;
+        height: 100%;
+    }
+    .project-card .project-icon {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        color: var(--accent-color);
+        text-align: center;
+    }
+    .project-card h4 {
+        color: #fff;
+        margin-bottom: 15px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .project-card p {
+        flex-grow: 1;
+        font-size: 0.9rem;
+        text-align: left;
+    }
+    .project-card .tech-stack {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--accent-color);
+        margin-bottom: 15px;
+    }
+    .project-card .project-links {
+        margin-top: auto;
+        text-align: center;
+    }
+    .project-card .project-links a {
+        margin: 0 5px;
+        color: var(--text-muted);
+        transition: color 0.3s ease;
+    }
+    .project-card .project-links a:hover {
+        color: var(--accent-color);
+    }
+
+
+    .contact-form .form-control {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid var(--card-border);
+        color: #fff;
+        border-radius: 8px;
+    }
+     .contact-form .form-control::placeholder {
+        color: var(--text-muted);
+     }
+     .contact-form .form-control:focus {
+        background: rgba(255, 255, 255, 0.15);
+        color: #fff;
+        box-shadow: 0 0 10px var(--glow-color);
+        border-color: var(--accent-color);
+     }
+     
+    .footer-area {
+        background-color: var(--background-dark);
+        border-top: 1px solid var(--card-border);
+    }
+    .footer-text p {
+        color: var(--text-muted);
+    }
+    .footer-area .social-icon a {
+        background: var(--card-background);
+        color: #fff;
+     }
+     .footer-area .social-icon a:hover {
+        background: var(--primary-color);
+        color: #fff;
+     }
+     .back-to-top {
+        background: var(--primary-color);
+        border-radius: 50%;
+     }
+  </style>
+
+</head>
+<body>
+
+  <!-- Header Area wrapper Starts -->
+  <header id="header-wrap">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar">
+      <div class="container">
+        <a href="#hero-area" class="navbar-brand" style="color: #fff; font-weight: 600;">RS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars" style="color: #fff;"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="onepage-nev navbar-nav ml-auto">
+            <li class="nav-item active"><a class="nav-link" href="#hero-area">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
-      <!-- Hero Area End -->
+    </nav>
+    <!-- Navbar End -->
 
-    </header>
-    <!-- Header Area wrapper End -->
-
-    <!-- About Section Start -->
-    <section id="about" class="section-padding">
+    <!-- Hero Area Start -->
+    <div id="hero-area" class="hero-area-bg">
+      <div class="overlay"></div>
       <div class="container">
         <div class="row">
-          <!-- <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
-              <img class="img-fluid" src="assets/img/about/about-1.jpg" alt="">
-            </div> -->
-          </div> 
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s">
-              <h3>Hello there!</h3>
-              <p> I am a computer science student who loves to  build things and solve problems using technology
-
-                i love to learn new technology and skills i want to work on cutting edge technology and i am passinate about Data science and AI/ML and i use to build games and apps i am specializedi in Data Science and currenty in the starting phase of my education i would love to work on the technology as i am a quick transitioning learner related stuff .........
-</p>
-              <div class="about-profile">
-                <ul class="admin-profile">
-                  <li><span class="pro-title"> Name </span> <span class="pro-detail">Rajat Srivastav</span></li>
-                  <li><span class="pro-title"> Age </span> <span class="pro-detail">20 Years</span></li>
-                  <li><span class="pro-title"> Experience </span> <span class="pro-detail">1 Years</span></li>
-                  <li><span class="pro-title"> Country </span> <span class="pro-detail">India</span></li>
-                  <li><span class="pro-title"> Location </span> <span class="pro-detail">Delhi NCR</span></li>
-                  <li><span class="pro-title"> e-mail </span> <span class="pro-detail">rajatsrivastav2212@@gmail.com</span></li>
-                  <li><span class="pro-title"> Phone </span> <span class="pro-detail">+918860754638</span></li>
-                  <li><span class="pro-title"> Freelance </span> <span class="pro-detail">Available</span></li>
-                </ul>
-              </div>
-              <!-- <a href="#" class="btn btn-common"><i class="icon-paper-clip"></i> Download Resume</a> -->
-              <a href="#contact" class="btn btn-danger"><i class="icon-speech"></i> Contact Me</a>
-<h4>Check out some stuff build by me</h4>
-<a href="https://trendpeek-ai-c95zdlkkex7wm6ujhufuyq.streamlit.app/" target="_blank" class="btn btn-dark"><i class="icon-music-tone"></i> Trend peek ai </a>
-<!-- <p>_______________________________________________________________________________________________</p>
-<a href="https://airbnb-clone-4da1d.web.app/" target="_blank" class="btn btn-dark"><i class="icon-music-tone"></i> airbnb Clone using react.js</a> -->
-
-
-<p>_______________________________________________________________________________________________</p>
-<a href="https://delta-deck-llp9.vercel.app/" target="_blank" class="btn btn-dark"><i class="icon-music-tone"></i> DeltaDesk realtime most most opotimal spread recommendtion</a>
-<!-- <p>_______________________________________________________________________________________________</p>
-              <a href="https://raj577.github.io/preloader/" target="_blank" class="btn btn-dark"><i class="icon-paper-plane"></i> Preloader Page for website</a>
-              <p>_______________________________________________________________________________________________</p> -->
-
-<!--                <a href="https://simmer.io/@rajat_/shoot-em-up" target="_blank" class="btn btn-dark"><i class="icon-paper-plane"></i> Shoot'em up  game build with unity</a>
-               <p>_______________________________________________________________________________________________</p>
-       <a href="https://rajatsr.itch.io/lola-by-rajat" target="_blank" class="btn btn-dark"><i class="icon-paper-plane"></i>Lola build using Python</a>
-       <p>_______________________________________________________________________________________________</p>
-              <a href="https://silly-almeida-b7e9b7.netlify.com/#/" target="_blank" class="btn btn-dark"><i class="icon-paper-plane"></i> A app build using Vue.js </a>
-              <p>_______________________________________________________________________________________________</p> -->
-            </div>
-          </div>   
-        </div>
-      </div>
-    </section>
-    <!-- About Section End -->
-
-    
-
-   
-
-    
-
-    
-          
-        
-
-    <!-- Contact Section Start -->
-    <section id="contact" class="section-padding">      
-      <div class="contact-form">
-        <div class="container">
-          <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.4s">          
-            <div class="col-md-6 col-lg-6 col-sm-12">
-              <div class="contact-block">
-                <h2>Contact Form</h2>
-                <form id="contactForm">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
-                        <div class="help-block with-errors"></div>
-                      </div>                                 
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
-                        <div class="help-block with-errors"></div>
-                      </div> 
-                    </div>
-                     <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" placeholder="Subject" id="msg_subject" class="form-control" required data-error="Please enter your subject">
-                        <div class="help-block with-errors"></div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group"> 
-                        <textarea class="form-control" id="message" placeholder="Your Message" rows="5" data-error="Write your message" required></textarea>
-                        <div class="help-block with-errors"></div>
-                      </div>
-                      <div class="submit-button">
-                        <button class="btn btn-common" id="submit" type="submit">Send Message</button>
-                        <div id="msgSubmit" class="h3 text-center hidden"></div> 
-                        <div class="clearfix"></div> 
-                      </div>
-                    </div>
-                  </div>            
-                </form>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-sm-12">
-              <div class="footer-right-area wow fadeIn">
-                <h2>Contact Address</h2>
-                <div class="footer-right-contact">
-                  <div class="single-contact">
-                    <div class="contact-icon">
-                      <i class="fa fa-map-marker"></i>
-                    </div>
-                    <p>Delhi NCR,India</p>
-                  </div>
-                  <div class="single-contact">
-                    <div class="contact-icon">
-                      <i class="fa fa-envelope"></i>
-                    </div>
-                    <p><a href="mailto:hello@tom.com">rajatsrivastav2212@gmail.com</a></p>
-                    <p><a href="mailto:tomsaulnier@gmail.com"></a></p>
-                  </div>
-                  <div class="single-contact">
-                    <div class="contact-icon">
-                      <i class="fa fa-phone"></i>
-                    </div>
-                    <p><a href="#">+919889671964</a></p>
-                    <p><a href="#"></a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- <div class="col-md-12">
-            <object style="border:0; height: 450px; width: 100%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34015.943594576835!2d-106.43242624069771!3d31.677719472407432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75d90e99d597b%3A0x6cd3eb9a9fcd23f1!2sCourtyard+by+Marriott+Ciudad+Juarez!5e0!3m2!1sen!2sbd!4v1533791187584"></object>
-            </div>
-          </div>
-        </div>
-      </div>    -->
-    </section>
-    <!-- Contact Section End -->
-
-    <!-- Footer Section Start -->
-    <footer class="footer-area section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
-              <ul class="social-icon">
-                <li>
-                  <a class="github" href="https://github.com/raj577"  target="_blank"><i class="icon-social-github"></i></a>
-                </li>
-                <li>
-                  <a class="linkedin" href="https://www.linkedin.com/in/rajat-srivastav-1b7a08144/" target="_blank"><i class="icon-social-linkedin"></i></a>
-                </li>
+          <div class="col-md-12 col-sm-12 text-center">
+            <div class="contents">
+              <h5 class="script-font wow fadeInUp" data-wow-delay="0.2s">Hi, I'm</h5>
+              <h2 class="head-title wow fadeInUp" data-wow-delay="0.4s">Rajat Srivastav</h2>
+              <p class="script-font wow fadeInUp" data-wow-delay="0.6s"><span id="typed-text" class="typed-text"></span></p>
+              <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
+                <li><a class="github" href="https://github.com/raj577" target="_blank"><i class="icon-social-github"></i></a></li>
+                <li><a class="linkedin" href="https://www.linkedin.com/in/rajat-srivastav-393725325/" target="_blank"><i class="icon-social-linkedin"></i></a></li>
               </ul>
-              <p>Copyright © 2020 RSrivastav All Right Reserved</p>
+              <div class="header-button wow fadeInUp" data-wow-delay="1s">
+                <a href="#portfolio" class="btn btn-common">View My Work</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- Footer Section End -->
+    </div>
+    <!-- Hero Area End -->
 
-    <!-- Go to Top Link -->
-    <a href="#" class="back-to-top">
-      <i class="icon-arrow-up"></i>
-    </a>
+  </header>
+  <!-- Header Area wrapper End -->
 
-    
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/jquery-min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.mixitup.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/jquery.nav.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>  
-    <script src="assets/js/nivo-lightbox.js"></script>
-    <script src="assets/js/jquery.slicknav.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/form-validator.min.js"></script>
-    <script src="assets/js/contact-form-script.min.js"></script>
-    <script src="assets/js/map.js"></script>
+  <!-- About Section Start -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
+          <div class="profile-wrapper wow fadeIn" data-wow-delay="0.3s">
+            <h2 class="section-title">About Me</h2>
+            <p class="text-center" style="max-width: 800px; margin: 0 auto 30px auto;">I'm a passionate Computer Science student with a strong drive for building innovative solutions. My primary focus lies in the exciting fields of Data Science and AI/ML, where I enjoy tackling complex problems and mastering new technologies. As a quick and adaptable learner, I'm always eager to work with cutting-edge tools to create impactful and intelligent applications.</p>
+            <div class="about-profile">
+              <ul class="admin-profile" style="max-width: 600px; margin: 0 auto; padding-left: 0;">
+                <li><span class="pro-title">Name</span><span class="pro-detail">Rajat Srivastav</span></li>
+                <li><span class="pro-title">Location</span><span class="pro-detail">Delhi NCR, India</span></li>
+                <li><span class="pro-title">E-mail</span><span class="pro-detail">rajatsrivastav2212@gmail.com</span></li>
+              </ul>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#contact" class="btn btn-danger"><i class="icon-speech"></i> Contact Me</a>
+                <!-- Add a link to your actual resume file here -->
+                <a href="#" class="btn btn-common ml-2"><i class="icon-cloud-download"></i> Download Resume</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section End -->
+
+  <!-- Skills Section Start -->
+  <section id="skills" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Technical Skills</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-2 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.3s"><div class="skill-card"><i class="fa fa-code"></i><h5>Python</h5></div></div>
+        <div class="col-lg-2 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.4s"><div class="skill-card"><i class="fa fa-database"></i><h5>SQL</h5></div></div>
+        <div class="col-lg-2 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.5s"><div class="skill-card"><i class="fa fa-cogs"></i><h5>AI / ML</h5></div></div>
+        <div class="col-lg-2 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.6s"><div class="skill-card"><i class="fa fa-line-chart"></i><h5>Data Science</h5></div></div>
+        <div class="col-lg-2 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.7s"><div class="skill-card"><i class="icon-screen-smartphone"></i><h5>Flutter</h5></div></div>
+      </div>
+    </div>
+  </section>
+  <!-- Skills Section End -->
+
+  <!-- Portfolio Section Start -->
+  <section id="portfolio" class="section-padding" style="background-color: var(--background-dark);">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">My Work</h2>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6 col-lg-4 d-flex align-items-stretch wow fadeInUp" data-wow-delay="0.4s">
+                  <div class="project-card">
+                    <h4>📹 YouTube Shorts Product Filter</h4>
+                    <p>A lightweight system that filters YouTube Shorts for product mentions using a combination of regex patterns and a compact machine learning model — optimized for low-RAM environments.</p>
+                    <div class="tech-stack">Tech: Python, scikit-learn, TF-IDF, Logistic Regression, YouTube API v3, Streamlit</div>
+                    <div class="project-links">
+                        <a href="https://trendpeek-ai-c95zdlkkex7wm6ujhufuyq.streamlit.app/" target="_blank">Live Demo</a> |
+                        <a href="https://github.com/raj577/TrendPeek-AI" target="_blank">GitHub</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-4 d-flex align-items-stretch wow fadeInUp" data-wow-delay="0.6s">
+                <div class="project-card">
+                  <h4>💼 DeltaDeck – Options Spread Recommender</h4>
+                  <p>An AI-powered dashboard for generating and visualizing options spreads in NIFTY and BANKNIFTY, based on user-selected risk and directional assumptions.</p>
+                  <div class="tech-stack">Tech: FastAPI, Angel One API, Streamlit, Python</div>
+                  <div class="project-links">
+                    <a href="https://delta-deck-llp9.vercel.app/" target="_blank">Live Demo</a> |
+                    <a href="https://github.com/raj577/DeltaDeck" target="_blank">GitHub</a>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-6 col-lg-4 d-flex align-items-stretch wow fadeInUp" data-wow-delay="0.8s">
+                <div class="project-card">
+                  <div class="project-icon"><i class="icon-social-github"></i></div>
+                  <h4>More Projects</h4>
+                  <p>Explore my GitHub to see a variety of other projects, including web apps, games, and various tech experiments.</p>
+                   <div class="project-links">
+                    <a href="https://github.com/raj577" target="_blank" class="btn btn-common mt-3">Visit GitHub</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Portfolio Section End -->
+
+  <!-- Contact Section Start -->
+  <section id="contact" class="section-padding">
+    <div class="contact-form">
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12"><h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Get In Touch</h2></div>
+        </div>
+        <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.4s">
+          <div class="col-md-6 col-lg-6 col-sm-12">
+            <div class="contact-block">
+              <h3>Send A Message</h3>
+              <form id="contactForm" action="https://formspree.io/f/{your_form_id}" method="POST">
+                <div class="row">
+                  <div class="col-md-6"><div class="form-group"><input type="text" class="form-control" name="name" placeholder="Name" required></div></div>
+                  <div class="col-md-6"><div class="form-group"><input type="email" placeholder="Email" class="form-control" name="email" required></div></div>
+                  <div class="col-md-12"><div class="form-group"><input type="text" placeholder="Subject" name="subject" class="form-control" required></div></div>
+                  <div class="col-md-12"><div class="form-group"><textarea class="form-control" name="message" placeholder="Your Message" rows="5" required></textarea></div></div>
+                  <div class="col-md-12"><button class="btn btn-common" type="submit">Send Message</button></div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-sm-12">
+            <div class="footer-right-area wow fadeIn">
+              <h3>Contact Details</h3>
+              <div class="footer-right-contact">
+                <div class="single-contact"><div class="contact-icon"><i class="fa fa-map-marker"></i></div><p>Delhi NCR, India</p></div>
+                <div class="single-contact"><div class="contact-icon"><i class="fa fa-envelope"></i></div><p><a href="mailto:rajatsrivastav2212@gmail.com">rajatsrivastav2212@gmail.com</a></p></div>
+                <div class="single-contact"><div class="contact-icon"><i class="fa fa-phone"></i></div><p><a href="tel:+918860754638">+91 8860754638</a></p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section End -->
+
+  <!-- Footer Section Start -->
+  <footer class="footer-area section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
+            <ul class="social-icon">
+              <li><a class="github" href="https://github.com/raj577" target="_blank"><i class="icon-social-github"></i></a></li>
+              <li><a class="linkedin" href="https://www.linkedin.com/in/rajat-srivastav-393725325/" target="_blank"><i class="icon-social-linkedin"></i></a></li>
+            </ul>
+            <p>Copyright © 2025 Rajat Srivastav | All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section End -->
+
+  <!-- Go to Top Link -->
+  <a href="#" class="back-to-top" style="display: none;"><i class="icon-arrow-up"></i></a>
+
+  <!-- CDN JS Files -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mixitup/2.1.11/jquery.mixitup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.counterup/1.0.0/jquery.counterup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <script>
+    $(document).ready(function() {
+      // WOW JS
+      new WOW().init();
+
+      // Sticky Nav
+      $(window).on('scroll', function() {
+        if ($(window).scrollTop() > 200) {
+          $('.scrolling-navbar').addClass('top-nav-collapse');
+        } else {
+          $('.scrolling-navbar').removeClass('top-nav-collapse');
+        }
+      });
+
+      // One Page Navigation
+      $('.navbar-nav').onePageNav({
+        currentClass: 'active'
+      });
+
+      // Back to top
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+          $('.back-to-top').fadeIn('slow');
+        } else {
+          $('.back-to-top').fadeOut('slow');
+        }
+      });
+      $('.back-to-top').click(function(){
+        $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
+        return false;
+      });
       
-  </body>
+      // Typed.js Animation
+      var options = {
+        strings: ["Developer", "AI Enthusiast", "Problem Solver"],
+        typeSpeed: 80,
+        backSpeed: 40,
+        backDelay: 2000,
+        startDelay: 500,
+        loop: true,
+        showCursor: true,
+        cursorChar: '|'
+      };
+      var typed = new Typed('#typed-text', options);
+
+    });
+  </script>
+
+</body>
 </html>
